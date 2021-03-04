@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+<h1 style="text-align:center">Gift Shop Management Application</h1>
+<div style="text-align:center">
+<a href="{{url_for('index')}}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('about')}}">About</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('stockmanager')}}">Stock Manager</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('shopowner')}}">Shop Owner</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('customer')}}">Customer</a>&nbsp;&nbsp;&nbsp;
+</div>
+<h2 style="text-align:center">Customer Registration</h2>
+<form name="f" method="post">
+
+<table align=center width=400 height=300>
+
+<tr>
+<td><B>Enter Full Name</B></td>
+<td><input type="text" name="fname" placeholder="Name" required></td>
+</tr>
+
+<tr>
+<td><B>Select Gender</B></td>
+<td>
+  Male&nbsp;&nbsp;<input type="radio" name="gender" value="Male" required>
+  Female&nbsp;&nbsp;<input type="radio" name="gender" value="Female" required>
+</td>
+</tr>
+
+<tr>
+<td><B>Enter Email Address</B></td>
+<td><input type="text" name="email" placeholder="Email Address" required></td>
+</tr>
+
+<tr>
+<td><B>Enter Mobile Number</B></td>
+<td><input type="text" name="mbnum" placeholder="Mobile number" required></td>
+</tr>
+
+<tr>
+<td><B>Password</B></td>
+<td><input type="password" name="pwd" placeholder="Password" required></td>
+</tr>
+
+<tr align="center">
+<td align=center colspan=2><input type="submit" value="Register"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

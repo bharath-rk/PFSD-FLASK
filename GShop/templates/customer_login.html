@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+
+<body>
+<h1 style="text-align:center">Gift Shop Management Application</h1>
+<div style="text-align:center">
+<a href="{{url_for('index')}}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('about')}}">About</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('stockmanager')}}">Stock Manager</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('shopowner')}}">Shop Owner</a>&nbsp;&nbsp;&nbsp;
+<a href="{{url_for('customer')}}">Customer</a>&nbsp;&nbsp;&nbsp;
+</div>
+<h2 style="text-align:center">Customer Login</h2>
+<form name="f"  method="post">
+<table align=center >
+<tr>
+<td><B>Enter Email:&nbsp;</B></td>
+<td><input type="text" name="email" placeholder="Email" required></td>
+</tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+<tr>
+<td><B>Password:&nbsp;</B></td>
+<td><input type="password" name="pwd" placeholder="Password" required></td>
+</tr>
+
+<a align=center  href="customer_reg.html">Need an account ?</a>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+
+<tr align="center">
+
+<td align=center colspan=2><input type="submit" value="Login"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
